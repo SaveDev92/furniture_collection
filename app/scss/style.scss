@@ -40,8 +40,78 @@
     margin: 0 auto;
 }
 
+// top-slider
+.top {
+    height: 722px;
+    background-image: url(../images/main_slider-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &__slider-item {
+        display: flex !important;
+        justify-content: center;
+        gap: 9px;
+        
+    }
+
+    &__slider-info {
+        max-width: 635px;
+        margin-top: 174px;
+        margin-right: 180px;
+    }
+
+    &__slider-title {
+        @extend %title-font;
+        font-size: 110px;
+        line-height: 134px;
+        color: #363838;
+
+    }
+
+    &__slider-line {
+        display: inline-block;
+        width: 185px;
+        background: #6D7278;
+        border: 1px solid #979797;
+        margin-bottom: 26px;
+    }
+
+    &__slider-text{
+        color: #5A5A5A;
+
+    }
+
+}
+
+.slick-dots {
+    width: 100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+
+
+    & button {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #363838;
+        font-size: 0;
+        border: 0;
+
+    }
+
+    .slick-active button {
+        background-color: yellow;
+    }
+}
+
+
+
+
+// info, social
 .footer {
-   
+
     background: #DFDFDF;
 
     &__inner {
@@ -76,7 +146,8 @@
         color: #363838;
         display: inline-block;
         position: relative;
-        &::before{
+
+        &::before {
             content: '';
             background-image: url(../images/footer-email.svg);
             position: absolute;
@@ -86,7 +157,7 @@
             height: 16px;
             line-height: 28px;
             background-repeat: no-repeat;
-            
+
         }
     }
 
@@ -116,12 +187,13 @@
     }
 }
 
+// form input btn
 .foot-info {
     width: 540px;
     display: flex;
     gap: 9px;
 
-    &__form{
+    &__form {
         width: 100%;
     }
 
@@ -173,23 +245,23 @@
 }
 
 .second-footer {
-   
+
     height: 110px;
     background: #363838;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+
+
     &__text {
-      
+
         line-height: 28px;
         text-align: center;
         color: #A1A1A1;
-        
+
     }
 
-    &__text span{
+    &__text span {
         padding-left: 7px;
     }
 }
