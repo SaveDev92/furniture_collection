@@ -179,6 +179,91 @@
     }
 }
 
+.how-work {
+    &__title{
+    @extend %title-font;
+    font-size: 36px;
+    line-height: 51px;
+    text-align: center;
+    color: #363838;
+    margin-top: 79px;
+    }
+    
+    &__inner{
+        position: relative;
+        width: 100%;
+    }
+
+    &__list{
+        min-height: 360px;
+        display: grid;
+        grid-template-columns: 268px 288px 446px;
+        margin-top: 39px;
+       
+    }
+
+    &__item{
+        position: relative;
+        &::after{
+            content: '';
+            height: 20px;
+            width: 2px;
+            background-color: #5A5A5A;
+            position: absolute;
+            bottom: 51%;
+            left: 0;
+        }
+
+       
+    }
+
+    &__item:nth-child(2){
+        height: 180px;
+        align-self : end;
+        position: relative;
+        padding-top: 30px;
+
+        &::after{
+            content: '';
+            height: 20px;
+            width: 2px;
+            background-color: #5A5A5A;
+            position: absolute;
+            top: -3px;
+            left: 0;
+        }
+      
+    }
+
+    &__item-wrap{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 13px;
+    }
+
+    &__item-title{
+        @extend %title-font;
+        font-size: 16px;
+        line-height: 23px;
+        color: #363838;
+        
+    }
+
+    &__item-line{
+        height: 1px;
+        width: 100%;
+        background-color: #5A5A5A;
+        position: absolute;
+        top: 49%;
+    }
+
+    &__item-text{
+        color: #5A5A5A;
+        margin-bottom: 108px;
+    }
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // info, social
 .footer {
