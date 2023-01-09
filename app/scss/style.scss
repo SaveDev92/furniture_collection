@@ -40,6 +40,7 @@
     margin: 0 auto;
 }
 
+////////////////////////////////////////////////////////////////
 // top-slider
 .top {
     height: 722px;
@@ -110,9 +111,7 @@
 
 
 .about {
-    &__inner {
-        
-    }
+    &__inner {}
 
 
     &__info {
@@ -143,13 +142,44 @@
         color: #5A5A5A;
     }
 
-    &__img-list{
+    &__img-list {
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 110px;
     }
 }
 
+.banner {
+    height: 616px;
+    background-image: url(../images/banner-bg.jpg);
+    padding-top: 172px;
+
+    &__info {
+        max-width: 731px;
+        margin-bottom: 79px;
+    }
+
+    &__info-title {
+        @extend %title-font;
+        font-size: 60px;
+        line-height: 80px;
+        color: #363838;
+    }
+
+    &__info-line {
+        display: inline-block;
+        width: 252px;
+        background: #6D7278;
+        border: 1px solid #979797;
+        margin: 25px 0;
+    }
+
+    &__info-text {
+        color: #5A5A5A;
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
 // info, social
 .footer {
 
