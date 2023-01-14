@@ -3,7 +3,7 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
-
+@import 'about';
 
 
 .header {
@@ -27,12 +27,19 @@
     &__list {
         display: flex;
         gap: 80px;
+
+    }
+
+    &__item{
+     
+     
     }
 
     &__link {
         @extend %title-font;
         color: rgba(54, 56, 56, 0.9);
-        line-height: 22;
+        line-height: 22px;
+        
     }
 }
 
@@ -312,7 +319,7 @@
         grid-template-columns: 812px 483px 446px;
         gap: 34px;
         justify-content: center;
-        margin-bottom: 80px;
+        
 
     }
 
@@ -333,7 +340,7 @@
 }
 
 .blog {
-
+    margin-top: 80px;
     &__title {
         width: 430px;
         margin: 0 auto;
