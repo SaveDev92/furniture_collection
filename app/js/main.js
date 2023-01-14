@@ -19,9 +19,8 @@ btn1.click();
 let allBtns = document.querySelectorAll('.btns');
 
 allBtns.forEach(function(btn) {
-
   btn.addEventListener('click', () => {
     allBtns.forEach(e => e.classList.remove('active'));
     btn.classList.add('active');
-    });
-})
+  });
+});
