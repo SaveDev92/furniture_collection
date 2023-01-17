@@ -5,6 +5,7 @@
 @import 'global';
 @import 'about';
 @import 'gallery';
+@import 'contact';
 
 
 .header {
@@ -274,8 +275,20 @@
     }
 }
 
-.gallery {
+//переход на главную страницу 
+.come-back {
+    background-color: #DFDFDF;
+    margin-bottom: 59px;
 
+    &__link {
+        font-size: 14px;
+        line-height: 55px;
+        color: #5A5A5A;
+    }
+
+}
+
+.gallery {
     &__inner {
         width: 100%;
         margin: 0 auto;
@@ -307,9 +320,6 @@
 
     }
 
-
-
-
     &__item {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -329,8 +339,6 @@
         width: 100%;
         height: 100%;
     }
-
-
 
     .active {
         background-color: yellow;
@@ -385,7 +393,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 // info, social
 .footer {
-
     background: #DFDFDF;
 
     &__inner {

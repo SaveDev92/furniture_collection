@@ -1,0 +1,156 @@
+.menu{
+    &__link-contact{
+        border-bottom: 2px solid #717272;
+        border-radius: 1px;
+    }
+}
+
+.map {
+   
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.come-back {
+    &__contact {
+        width: 100%;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+
+    }
+
+    &__contact-link {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 55px;
+        color: #000000;
+    }
+
+}
+
+.contact {
+    
+    &__title {
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 51px;
+        color: #363838;
+    }
+
+    &__line {
+        display: inline-block;
+        width: 252px;
+        background: #6D7278;
+        border: 1px solid #979797;
+        margin: 25px 0;
+    }
+
+    &__apps {
+        width: 825px;
+        margin-left: 282px;
+        display: flex;
+        gap: 36px;
+        margin-bottom: 21px;
+    }
+
+    &__apps-link {
+
+    }
+
+    &__info{
+        margin-left: 282px;
+    }
+
+    &__info-text {
+        line-height: 28px;
+        color: #A1A1A1;
+        
+    }
+
+    &__info-phone {
+        color: #5A5A5A;
+        margin-top: 10px;
+    }
+    &__info-adres {
+        color: #5A5A5A;
+    }
+
+    &__info-mail {
+        padding-left: 25px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #363838;
+        display: inline-block;
+        position: relative;
+        margin-top: 10px;
+
+        &::before {
+            content: '';
+            background-image: url(../images/footer-email.svg);
+            position: absolute;
+            left: 0;
+            transform: translateY(50%);
+            width: 16px;
+            height: 16px;
+            line-height: 28px;
+            background-repeat: no-repeat;
+
+        }
+    }
+    .cont-info {
+        width: 540px;
+        display: flex;
+        
+        
+
+        &__form {
+            width: 100%;
+            margin-top: 22px;
+        }
+
+        &__form-input {
+            width: 407px;
+            height: 40px;
+            opacity: 0.7;
+            border-radius: 21px;
+            background: transparent;
+            border: 1px solid #383636;
+        }
+
+       
+
+        &__form-input--width {
+            width: 825px;
+            height: 125px;
+            opacity: 0.7;
+            border-radius: 21px;
+            background: transparent;
+            border: 1px solid #383636;
+            margin-top: 13px;
+            position: relative;
+        }
+
+        &__form-input::placeholder {
+            padding-left: 20px;
+        }
+        &__form-input--width::placeholder {
+            position: absolute;
+            top: 10px;
+            padding-left: 20px;
+        }
+
+        &__form-btn {
+            width: 160px;
+            height: 40px;
+            display: inline-block;
+            background: #363838;
+            border-radius: 21px;
+            color: #fff;
+            border: 1px solid #383636;
+            margin: 20px 0 100px;
+        }
+    }
+
+
+}
