@@ -1,15 +1,13 @@
 .menu {
 
-&__list {
+    &__list {}
 
-}
-&__item {
+    &__item {}
 
-}
-&__link-about{
-    border-bottom: 2px solid #717272;
-    border-radius: 1px;
-}
+    &__link-about {
+        border-bottom: 2px solid #717272;
+        border-radius: 1px;
+    }
 }
 
 .about-us {
@@ -18,15 +16,12 @@
     position: relative;
     margin: 0 auto;
 
-    &__page-line {
-        
-    }
+    &__page-line {}
 
     &__link {
         font-size: 14px;
         line-height: 55px;
         color: #5A5A5A;
-       
     }
 
     &__title {
@@ -36,46 +31,189 @@
         color: #363838;
         text-align: center;
         margin-top: 105px;
-        
+
     }
 
 }
 
-.info{
+.info {
     margin-top: 130px;
 
-    &__inner{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: relative;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
     }
 
-&__title {
-    width: 100%;
-    @extend %title-font;
-    font-size: 36px;
-    line-height: 60px;
-    color: #363838;
-    
+    &__title {
+        width: 100%;
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 60px;
+        color: #363838;
+
+    }
+
+    &__line {
+        display: inline-block;
+        width: 252px;
+        background: #6D7278;
+        border: 1px solid #979797;
+        margin: 25px 0;
+        position: absolute;
+        left: 0;
+        top: 130px;
+    }
+
+    &__text {
+        width: 825px;
+        color: #5A5A5A;
+        margin-top: 65px;
+        margin-bottom: 100px;
+    }
+
 }
 
-&__line {
-    display: inline-block;
-    width: 252px;
-    background: #6D7278;
-    border: 1px solid #979797;
-    margin: 25px 0;
-    position: absolute;
-    left: 0;
-    top: 130px;
+.video {
+    margin-bottom: 235px;
 }
 
-&__text {
-    width: 825px;
-    color: #5A5A5A;
-    margin-top: 65px;
-    margin-bottom: 100px;
-}
+.details {
+    height: 414px;
+    background-image: url(../images/details_bg.jpg);
+    margin-top: 100px;
+
+    &__inner {
+        position: relative;
+        display: flex;
+    }
+
+    &__img {
+        position: absolute;
+        left: -220px;
+        top: -140px;
+    }
+
+    &__info {
+        width: 825px;
+        position: absolute;
+        top: -140px;
+        right: 0;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 60px;
+        color: #363838;
+    }
+
+    &__line {
+        width: 252px;
+        background: #6D7278;
+        border: 1px solid #979797;
+        margin: 25px 0;
+    }
+
+    &__text {
+        color: #5A5A5A;
+        margin-bottom: 30px;
+    }
+
+    &__diagram {}
+
+    &__diagram-wrap {
+        width: 825px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__diagram-point {
+        @extend %title-font;
+        font-size: 16px;
+        line-height: 23px;
+        color: #363838;
+        margin-bottom: 14px;
+    }
+
+    &__diagram-percent {
+          @extend %title-font;
+        font-size: 16px;
+        line-height: 23px;
+        color: #363838;
+    }
+
+    &__diagram-indicator--80 {
+        height: 4px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        position: relative;
+        margin-bottom: 33px;
+    }
+
+    &__diagram-indicator--80::before {
+        content: '';
+        height: 4px;
+        width: 80%;
+        background: #363838;
+        border-radius: 4px;
+        position: absolute;
+
+    }
+    &__diagram-indicator--70 {
+        height: 4px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        position: relative;
+        margin-bottom: 33px;
+    }
+
+    &__diagram-indicator--70::before {
+        content: '';
+        height: 4px;
+        width: 70%;
+        background: #363838;
+        border-radius: 4px;
+        position: absolute;
+
+    }
+    &__diagram-indicator--75 {
+        height: 4px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        position: relative;
+        margin-bottom: 33px;
+    }
+
+    &__diagram-indicator--75::before {
+        content: '';
+        height: 4px;
+        width: 75%;
+        background: #363838;
+        border-radius: 4px;
+        position: absolute;
+
+    }
+    &__diagram-indicator--40 {
+        height: 4px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        position: relative;
+        margin-bottom: 33px;
+    }
+
+    &__diagram-indicator--40::before {
+        content: '';
+        height: 4px;
+        width: 40%;
+        background: #363838;
+        border-radius: 4px;
+        position: absolute;
+
+    }
+
 
 }
